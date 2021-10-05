@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Assignment 7</title>
+  <link rel="stylesheet" href="CSS/Responsive_article.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&family=Libre+Franklin:ital,wght@0,700;1,400&family=Titillium+Web&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+<body>
+  <aside>
+    <section> <img src="IMG/Petco_ad.jpeg"> </section>
+    <section> <img src="IMG/Doctor-Strange-No-Way-Home.png">
+      That's Probably not Doctor Strange in Spider-Man: No Way Home Trailer
+    </section>
+    <section> <img src="IMG/eastward-review.jpeg">
+      Eastward Review - Wild Wacky, and Wonderful, This is One of 2021's Brightest Games </section>
+      <section> <img src="IMG/Valheim.jpeg">
+        Valheim Devs Recommend Players Start Over With Heart & Home Update </section>
+      </aside>
+      <article>
+        <header>
+          <h1> Magic: The Gathering Artist's Playmat Kickstarter Has A Happy Dog Thriving In A Field </h1>
+          <h2> Johannes Voss brings his best art to a playmat near you. </h2>
+          <a href="https://www.thegamer.com/author/joe-parlock/"> <h3> By Joe Parlock</h3> </a>
+          <h4> Published 1 day ago </h4>
+        </header>
+        <div class="Content">
+          <div class="grid">
+            <div class="grid-item"> <a href="IMG/placemat_larger.jpg" data-lightbox="HeaderPhoto">
+              <img src="IMG/johannessvoss.jpg" alt="Adorable Magic: The Gathering Placemat">
+            </a></div>
+          </div>
+
+          <p> Magic: the Gathering artist Johannes Voss has launched a Kickstarter campaign to create a range of playmats based on his art, including one of the happiest dogs ever included in the game.</p>
+          <p> In collaboration with OMA (Original Magic Art), Wizards of the Coast, and UltraPro, Voss is looking for £9013 to release a limited collection of six different playmats – roll-up mats designed to protect cards from rough tables. The art comes from six of Voss' Magic cards: Carpet of Flowers from his recent Secret Lair, Gallia of the Endless Dance from Theros Beyond Death, Gift of Orzhova from Gatecrash, the Prismatic Bridge and an Island from Kaldheim, and Plains from Jumpstart (unofficially known as the Dog Plains, for obvious reasons). </p>
+          <p> At the time of writing, the campaign is over halfway to its goal with 29 days left to go, all but guaranteeing its success. The mats start at $40 (£29) for one, with shipping ranging between $5 and $30 depending on the region it is being sent to. As is usual with Kickstarter, payments won't be processed until October 13, when the campaign closes. Six of the eight playmats in Johannes Voss' Kickstarter. </p>
+          <p> Each one features Voss' art extended exclusively for the mats, with a minimally obtrusive MTG logo in the corner (required due to agreements with Wizards of the Coast) and stamped with Voss' signature. Unfortunately, hand-written signatures were not available due to COVID precautions, however OMA has promised that the stamp used for these mats will be destroyed, to ensure that no identical print run will ever be made again. As part of the campaign's stretch goals, two unconfirmed additional playmats will be available, voted for by backers from all of Voss' portfolio. With stunning art like Prismari Command, Sanctum of All, and Celestial Unicorn all up for voting, whatever is picked will probably be a great one. </p>
+        </div>
+      </article>
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/masonry.pkgd.js"></script>
+      <script src="js/lightbox.js"></script>
+      <script>
+      $(document).ready(function(){
+        console.log("ready")
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 115
+        })
+      })
+      </script>
+    </body>
+    </html>
